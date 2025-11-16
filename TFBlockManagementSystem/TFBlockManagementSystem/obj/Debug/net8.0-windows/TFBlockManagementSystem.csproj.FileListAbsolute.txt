@@ -14,11 +14,10 @@ C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.pdb
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.genruntimeconfig.cache
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\ref\TFBlockManagementSystem.dll
-C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Factory1.resources
-C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Factory2.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Manager.resources
-C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OnwerDashBoard.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OwnerDashBoard.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.ManageWorkers.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Payments.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.RawMaterial.resources
+C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.sourcelink.json
+C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Reports.resources

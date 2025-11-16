@@ -6,6 +6,8 @@ namespace TFBlockManagementSystem
 {
     partial class OwnerDashBoard
     {
+        private Label lblWelcome;
+
         private System.ComponentModel.IContainer components = null;
 
         protected override void Dispose(bool disposing)
@@ -36,8 +38,7 @@ namespace TFBlockManagementSystem
             label1.Size = new System.Drawing.Size(291, 38);
             label1.TabIndex = 0;
             label1.Text = "Owner Dashboard";
-            label1.Click += label1_Click;
-            // 
+            
             // buttonManageWorkers
             // 
             buttonManageWorkers.Location = new System.Drawing.Point(310, 120);
@@ -87,6 +88,15 @@ namespace TFBlockManagementSystem
             buttonLogout.Text = "Logout";
             buttonLogout.UseVisualStyleBackColor = true;
             buttonLogout.Click += buttonLogout_Click;
+            //
+            //Welcome
+            //
+            this.lblWelcome = new Label();
+            this.lblWelcome.Location = new Point(20, 20);
+            this.lblWelcome.Size = new Size(300, 30);
+            this.lblWelcome.Text = "Welcome!";
+            this.Controls.Add(this.lblWelcome);
+
             // 
             // OwnerDashBoard
             // 

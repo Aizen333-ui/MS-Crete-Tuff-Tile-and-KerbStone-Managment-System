@@ -1,71 +1,56 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
 {
     public partial class OwnerDashBoard : Form
     {
-        public OwnerDashBoard()
+        private List<WorkerItem> workers;
+        private List<RawMaterialItem> rawMaterials;
+        private List<PaymentItem> payments;
+
+        public OwnerDashBoard(List<WorkerItem> workers, List<RawMaterialItem> rawMaterials, List<PaymentItem> payments)
         {
             InitializeComponent();
+            this.workers = workers;
+            this.rawMaterials = rawMaterials;
+            this.payments = payments;
         }
 
         private void OwnerDashBoard_Load(object sender, EventArgs e)
         {
-            label1.Text = "Welcome, Factory Owner!";
+            lblWelcome.Text = "Welcome, Factory Owner!";
         }
 
-        // ----- Button 1: Manage Workers -----
         private void buttonManageWorkers_Click(object sender, EventArgs e)
         {
-            // Open worker management form
-            ManageWorkers workersForm = new ManageWorkers();
-            workersForm.Show();
+            ManageWorkers mwForm = new ManageWorkers(workers);
+            mwForm.ShowDialog();
         }
 
-        // ----- Button 2: Manage Raw Materials -----
         private void buttonRawMaterials_Click(object sender, EventArgs e)
         {
-            // Example: Open raw material addition or management form
-            RawMaterial materialForm = new RawMaterial();
-            materialForm.Show();
+            RawMaterial rmForm = new RawMaterial(rawMaterials);
+            rmForm.ShowDialog();
         }
 
-        // ----- Button 3: View Payments -----
         private void buttonPayments_Click(object sender, EventArgs e)
         {
-            // Open payments record form
-            Payments payments = new Payments();
-            payments.Show();
+            Payments paymentForm = new Payments(payments, workers);
+            paymentForm.ShowDialog();
+
         }
 
-        // ----- Button 4: View Reports -----
         private void buttonReports_Click(object sender, EventArgs e)
         {
-            // Open reports form
-            Reports reports = new Reports();
-            reports.Show();
+            Reports repForm = new Reports(workers, rawMaterials, payments);
+            repForm.ShowDialog();
         }
 
-        // ----- Button 5: Logout -----
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to log out?",
-                "Confirm Logout",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("TF Block Management System");
+            this.Close();
         }
     }
 }

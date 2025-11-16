@@ -18,54 +18,68 @@
 
         private void InitializeComponent()
         {
-            this.lblUsername = new Label();
-            this.lblPassword = new Label();
-            this.txtUsername = new TextBox();
-            this.txtPassword = new TextBox();
-            this.btnLogin = new Button();
-            this.SuspendLayout();
-
+            lblUsername = new Label();
+            lblPassword = new Label();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
+            SuspendLayout();
+            // 
             // lblUsername
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(207, 137);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Text = "Username:";
-
-            // txtUsername
-            this.txtUsername.Location = new System.Drawing.Point(310, 137);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(150, 31);
-
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(207, 137);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(95, 25);
+            lblUsername.TabIndex = 3;
+            lblUsername.Text = "Username:";
+            // 
             // lblPassword
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(207, 203);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Text = "Password:";
-
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(207, 203);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(91, 25);
+            lblPassword.TabIndex = 1;
+            lblPassword.Text = "Password:";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(310, 137);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(150, 31);
+            txtUsername.TabIndex = 2;
+            txtUsername.TextChanged += txtUsername_TextChanged;
+            // 
             // txtPassword
-            this.txtPassword.Location = new System.Drawing.Point(310, 197);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(150, 31);
-            this.txtPassword.UseSystemPasswordChar = true;
-
+            // 
+            txtPassword.Location = new Point(310, 197);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(150, 31);
+            txtPassword.TabIndex = 0;
+            txtPassword.UseSystemPasswordChar = true;
+            // 
             // btnLogin
-            this.btnLogin.Location = new System.Drawing.Point(327, 285);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(112, 34);
-            this.btnLogin.Text = "Login";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-
+            // 
+            btnLogin.Location = new Point(327, 285);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(112, 34);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Login";
+            btnLogin.Click += btnLogin_Click;
+            // 
             // Form1
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.btnLogin);
-            this.Name = "Form1";
-            this.Text = "TF Block Management - Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
+            Controls.Add(btnLogin);
+            Name = "Form1";
+            Text = "TF Block Management - Login";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

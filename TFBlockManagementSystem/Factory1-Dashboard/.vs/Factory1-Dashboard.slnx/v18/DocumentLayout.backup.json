@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\S-E Project\\Factory1-Dashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|D:\\S-E Project\\Factory1-Dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|D:\\S-E Project\\Factory1-Dashboard\\factory1dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|solutionrelative:factory1dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|d:\\s-e project\\factory1-dashboard\\factory1dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|solutionrelative:factory1dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|d:\\s-e project\\factory1-dashboard\\factory1dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|solutionrelative:factory1dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|D:\\S-E Project\\Factory1-Dashboard\\rawmaterialpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF35BBD-51EF-4731-A6CE-9EC4FB655571}|Factory1-Dashboard.csproj|solutionrelative:rawmaterialpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Factory1Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.cs",
+              "RelativeDocumentMoniker": "Factory1Dashboard.cs",
+              "ToolTip": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.cs [Design]",
+              "RelativeToolTip": "Factory1Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:03:54.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Factory1Dashboard.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.cs",
+              "RelativeDocumentMoniker": "Factory1Dashboard.cs",
+              "ToolTip": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.cs",
+              "RelativeToolTip": "Factory1Dashboard.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:45:16.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Factory1Dashboard.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "Factory1Dashboard.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Factory1-Dashboard\\Factory1Dashboard.Designer.cs",
+              "RelativeToolTip": "Factory1Dashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:41:57.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Factory1-Dashboard\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\S-E Project\\Factory1-Dashboard\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:55:05.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RawMaterialPage.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Factory1-Dashboard\\RawMaterialPage.Designer.cs",
+              "RelativeDocumentMoniker": "RawMaterialPage.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Factory1-Dashboard\\RawMaterialPage.Designer.cs",
+              "RelativeToolTip": "RawMaterialPage.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:49:57.674Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

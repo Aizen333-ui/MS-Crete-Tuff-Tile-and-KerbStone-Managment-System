@@ -1,0 +1,395 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\paymentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\paymentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\manageworkers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\manageworkers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\manageworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\manageworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\workeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\workeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\payments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\payments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\ownerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\ownerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\datamodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\rawmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\rawmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\rawmaterialitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\rawmaterialitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\reports.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\reports.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\ownerdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\ownerdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\ownerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\ownerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\rawmaterial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\rawmaterial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\rawmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\rawmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\manageworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\manageworkers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\onwerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\onwerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|d:\\s-e project\\project\\tfblockmanagementsystem\\tfblockmanagementsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|D:\\S-E Project\\Project\\TFBlockManagementSystem\\tfblockmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97EA96F2-3AAD-47A7-822C-3C0A830A5B88}|TFBlockManagementSystem\\TFBlockManagementSystem.csproj|solutionrelative:tfblockmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentItem.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\PaymentItem.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\PaymentItem.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\PaymentItem.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\PaymentItem.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageWorkers.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\ManageWorkers.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\ManageWorkers.Designer.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payments.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Payments.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Payments.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageWorkers.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\ManageWorkers.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\ManageWorkers.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkerItem.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\WorkerItem.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\WorkerItem.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\WorkerItem.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\WorkerItem.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OwnerDashBoard.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Payments.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Payments.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Payments.Designer.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataModels.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\DataModels.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\DataModels.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\DataModels.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\DataModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RawMaterial.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\RawMaterial.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\RawMaterial.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Reports.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Reports.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Reports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Form1.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RawMaterialItem.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterialItem.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\RawMaterialItem.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterialItem.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\RawMaterialItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Reports.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Reports.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Reports.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OwnerDashBoard.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\OwnerDashBoard.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\OwnerDashBoard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OwnerDashBoard.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\OwnerDashBoard.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\OwnerDashBoard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RawMaterial.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\RawMaterial.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\RawMaterial.Designer.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RawMaterial.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\RawMaterial.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\RawMaterial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Payments.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Payments.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\Payments.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ManageWorkers.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\ManageWorkers.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\ManageWorkers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Manager.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Manager.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Manager.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\Manager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Reports.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Reports.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\Reports.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Form1.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OnwerDashBoard.cs [Design]",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\OnwerDashBoard.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\OnwerDashBoard.cs",
+              "ToolTip": "C:\\Users\\talha\\source\\repos\\TFBlockManagementSystem\\TFBlockManagementSystem\\OnwerDashBoard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TFBlockManagementSystem\\Form1.Designer.cs",
+              "ToolTip": "D:\\S-E Project\\Project\\TFBlockManagementSystem\\TFBlockManagementSystem\\Form1.Designer.cs",
+              "RelativeToolTip": "TFBlockManagementSystem\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:26:04.871Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

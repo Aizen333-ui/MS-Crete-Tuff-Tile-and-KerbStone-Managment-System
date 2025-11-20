@@ -21,3 +21,33 @@ C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.RawMaterial.resources
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.sourcelink.json
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Reports.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Form1.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.ManageWorkers.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OwnerDashBoard.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Payments.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Properties.Resources.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory1_Dashboard.Pages.RawMaterialUsage1.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory1_Dashboard.Pages.RecordProduction1.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory1_Dashboard.Pages.Report1.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.csproj.GenerateResource.cache
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.AssemblyInfoInputs.cache
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.AssemblyInfo.cs
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.csproj.CoreCompileInputs.cache
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.sourcelink.json
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.dll
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\refint\TFBlockManagementSystem.dll
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.pdb
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.AddandViewRawMaterial.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.BuyingandSelling.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.WorkersAddandView.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.exe
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.dll.config
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.deps.json
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.runtimeconfig.json
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.dll
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\TFBlockManagementSystem.pdb
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.genruntimeconfig.cache
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\ref\TFBlockManagementSystem.dll
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.RawMaterial.resources
+D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OwnerReportsPage.resources

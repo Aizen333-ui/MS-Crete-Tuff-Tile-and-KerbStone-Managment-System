@@ -1,4 +1,4 @@
-namespace TFBlockManagementSystem
+/*namespace TFBlockManagementSystem
 {
     internal static class Program
     {
@@ -14,4 +14,4 @@ namespace TFBlockManagementSystem
             Application.Run(new Form1());
         }
     }
-}
+}*/

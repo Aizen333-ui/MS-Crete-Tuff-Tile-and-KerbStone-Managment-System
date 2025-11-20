@@ -1,56 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
 {
-    public partial class OwnerDashBoard : Form
+    public partial class OwnerDashboard : Form
     {
-        private List<WorkerItem> workers;
-        private List<RawMaterialItem> rawMaterials;
-        private List<PaymentItem> payments;
-
-        public OwnerDashBoard(List<WorkerItem> workers, List<RawMaterialItem> rawMaterials, List<PaymentItem> payments)
+        public OwnerDashboard()
         {
             InitializeComponent();
-            this.workers = workers;
-            this.rawMaterials = rawMaterials;
-            this.payments = payments;
         }
 
-        private void OwnerDashBoard_Load(object sender, EventArgs e)
+        // --- PAGE LOAD FUNCTION ---
+        private void LoadPage(UserControl page)
         {
-            lblWelcome.Text = "Welcome, Factory Owner!";
+            panelMain.Controls.Clear();
+            page.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(page);
+            page.BringToFront();
         }
 
-        private void buttonManageWorkers_Click(object sender, EventArgs e)
+        // --- MENU CLICK EVENTS ---
+
+        private void btnRawMaterial_Click(object sender, EventArgs e)
         {
-            ManageWorkers mwForm = new ManageWorkers(workers);
-            mwForm.ShowDialog();
+            LoadPage(new RawMaterial());
         }
 
-        private void buttonRawMaterials_Click(object sender, EventArgs e)
+        private void btnPayments_Click(object sender, EventArgs e)
         {
-            RawMaterial rmForm = new RawMaterial(rawMaterials);
-            rmForm.ShowDialog();
+            LoadPage(new Payments());
         }
 
-        private void buttonPayments_Click(object sender, EventArgs e)
+        private void btnManageWorkers_Click(object sender, EventArgs e)
         {
-            Payments paymentForm = new Payments(payments, workers);
-            paymentForm.ShowDialog();
-
+            LoadPage(new WorkersAddandView());
         }
 
-        private void buttonReports_Click(object sender, EventArgs e)
+        private void btnReports_Click(object sender, EventArgs e)
         {
-            Reports repForm = new Reports(workers, rawMaterials, payments);
-            repForm.ShowDialog();
+            LoadPage(new OwnerReportsPage());
         }
 
-        private void buttonLogout_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("You want to Logout?", "Confirm",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

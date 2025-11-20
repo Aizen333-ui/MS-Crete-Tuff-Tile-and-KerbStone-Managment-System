@@ -4,6 +4,21 @@
     {
         private System.ComponentModel.IContainer components = null;
 
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.TextBox txtRole;
+
+        private System.Windows.Forms.Label lblWage;
+        private System.Windows.Forms.TextBox txtWage;
+
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnRemove;
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -13,100 +28,91 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
 
         private void InitializeComponent()
         {
-            labelName = new Label();
-            labelRole = new Label();
-            labelWage = new Label();
-            textBoxName = new TextBox();
-            textBoxRole = new TextBox();
-            textBoxWage = new TextBox();
-            buttonAdd = new Button();
-            buttonRemove = new Button();
-            listBoxWorkers = new ListBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
 
-            SuspendLayout();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.txtRole = new System.Windows.Forms.TextBox();
 
-            // labelName
-            labelName.AutoSize = true;
-            labelName.Location = new Point(50, 40);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(120, 25);
-            labelName.Text = "Worker Name:";
+            this.lblWage = new System.Windows.Forms.Label();
+            this.txtWage = new System.Windows.Forms.TextBox();
 
-            // textBoxName
-            textBoxName.Location = new Point(200, 40);
-            textBoxName.Size = new Size(200, 31);
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
 
-            // labelRole
-            labelRole.AutoSize = true;
-            labelRole.Location = new Point(50, 90);
-            labelRole.Name = "labelRole";
-            labelRole.Size = new Size(100, 25);
-            labelRole.Text = "Role / Job:";
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
 
-            // textBoxRole
-            textBoxRole.Location = new Point(200, 90);
-            textBoxRole.Size = new Size(200, 31);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
 
-            // labelWage
-            labelWage.AutoSize = true;
-            labelWage.Location = new Point(50, 140);
-            labelWage.Name = "labelWage";
-            labelWage.Size = new Size(120, 25);
-            labelWage.Text = "Daily Wage (PKR):";
+            // Label: Worker Name
+            this.lblName.Text = "Worker Name:";
+            this.lblName.Location = new System.Drawing.Point(30, 30);
+            this.lblName.AutoSize = true;
 
-            // textBoxWage
-            textBoxWage.Location = new Point(200, 140);
-            textBoxWage.Size = new Size(200, 31);
+            this.txtName.Location = new System.Drawing.Point(150, 30);
+            this.txtName.Width = 220;
 
-            // buttonAdd
-            buttonAdd.Location = new Point(50, 200);
-            buttonAdd.Size = new Size(150, 40);
-            buttonAdd.Text = "Add Worker";
-            buttonAdd.Click += buttonAdd_Click;
+            // Label: Job / Role
+            this.lblRole.Text = "Job / Role:";
+            this.lblRole.Location = new System.Drawing.Point(30, 80);
+            this.lblRole.AutoSize = true;
 
-            // buttonRemove
-            buttonRemove.Location = new Point(250, 200);
-            buttonRemove.Size = new Size(150, 40);
-            buttonRemove.Text = "Remove Selected";
-            buttonRemove.Click += buttonRemove_Click;
+            this.txtRole.Location = new System.Drawing.Point(150, 80);
+            this.txtRole.Width = 220;
 
-            // listBoxWorkers
-            listBoxWorkers.Location = new Point(450, 40);
-            listBoxWorkers.Size = new Size(300, 200);
+            // Label: Daily Wage
+            this.lblWage.Text = "Daily Wage (PKR):";
+            this.lblWage.Location = new System.Drawing.Point(30, 130);
+            this.lblWage.AutoSize = true;
 
-            // ManageWorkers Form
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 300);
-            Controls.Add(labelName);
-            Controls.Add(labelRole);
-            Controls.Add(labelWage);
-            Controls.Add(textBoxName);
-            Controls.Add(textBoxRole);
-            Controls.Add(textBoxWage);
-            Controls.Add(buttonAdd);
-            Controls.Add(buttonRemove);
-            Controls.Add(listBoxWorkers);
-            Name = "ManageWorkers";
-            Text = "Manage Workers";
-            ResumeLayout(false);
-            PerformLayout();
+            this.txtWage.Location = new System.Drawing.Point(150, 130);
+            this.txtWage.Width = 220;
+
+            // Add button
+            this.btnAdd.Text = "Add Worker";
+            this.btnAdd.Location = new System.Drawing.Point(150, 180);
+            this.btnAdd.Width = 140;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+
+            // Remove button
+            this.btnRemove.Text = "Remove Selected";
+            this.btnRemove.Location = new System.Drawing.Point(300, 180);
+            this.btnRemove.Width = 140;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+
+            // DataGridView
+            this.dataGridView1.Location = new System.Drawing.Point(30, 250);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 300);
+
+            this.dataGridView1.ColumnCount = 3;
+            this.dataGridView1.Columns[0].Name = "Worker Name";
+            this.dataGridView1.Columns[1].Name = "Job / Role";
+            this.dataGridView1.Columns[2].Name = "Daily Wage (PKR)";
+
+            // Adding Controls
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtName);
+
+            this.Controls.Add(this.lblRole);
+            this.Controls.Add(this.txtRole);
+
+            this.Controls.Add(this.lblWage);
+            this.Controls.Add(this.txtWage);
+
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRemove);
+
+            this.Controls.Add(this.dataGridView1);
+
+            this.Size = new System.Drawing.Size(750, 600);
+
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
-
-        #endregion
-
-        private Label labelName;
-        private Label labelRole;
-        private Label labelWage;
-        private TextBox textBoxName;
-        private TextBox textBoxRole;
-        private TextBox textBoxWage;
-        private Button buttonAdd;
-        private Button buttonRemove;
-        private ListBox listBoxWorkers;
     }
 }

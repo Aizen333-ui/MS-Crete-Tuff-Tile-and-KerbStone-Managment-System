@@ -5,17 +5,9 @@ namespace TFBlockManagementSystem
 {
     public partial class Form1 : Form
     {
-        private List<WorkerItem> workers = new List<WorkerItem>();
-        private List<RawMaterialItem> rawMaterials = new List<RawMaterialItem>();
-        private List<PaymentItem> payments = new List<PaymentItem>();
-
         public Form1()
         {
             InitializeComponent();
-        }
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            // You can leave this empty if you don't need any logic here
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -23,28 +15,52 @@ namespace TFBlockManagementSystem
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Please enter username and password.", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // -------------- OWNER LOGIN --------------
             if (username == "owner" && password == "owner123")
             {
-                MessageBox.Show("Owner logged in!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Owner logged in!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                this.Hide();  // Hide the login form
-                OwnerDashBoard ownerForm = new OwnerDashBoard(workers, rawMaterials, payments); // Pass the shared lists
-                ownerForm.ShowDialog();  // Show the owner dashboard
-                this.Show();  // Show the login form again when the owner dashboard is closed
+                OwnerDashboard owner = new OwnerDashboard();
+
+                this.Hide();        // Hide login form
+                owner.FormClosed += (s, args) => this.Show();  // Show login when dashboard closes
+                owner.Show();
+                return;
             }
-            else if (username == "manager" && password == "manager123")
+
+            // -------------- MANAGER LOGIN --------------
+            if (username == "manager" && password == "manager123")
             {
-                // manager login code...
+                MessageBox.Show("Manager logged in!");
+
+                // TODO: manager dashboard here...
+
+                return;
             }
-            else if (username == "factory1" && password == "f1pass")
+
+            // -------------- FACTORY 1 LOGIN --------------
+            if (username == "factory1" && password == "f1pass")
             {
-                // factory login code...
+                MessageBox.Show("Factory 1 logged in!");
+
+                // TODO: factory 1 dashboard...
+
+                return;
             }
-            else
-            {
-                MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            // INVALID LOGIN
+            MessageBox.Show("Invalid username or password!", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
-
+       
     }
 }

@@ -1,37 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
 {
-    public partial class Reports : Form
+    public partial class OwnerReportsPage : UserControl
     {
-        private List<WorkerItem> workers;
-        private List<RawMaterialItem> rawMaterials;
-        private List<PaymentItem> payments;
-
-        public Reports(List<WorkerItem> workers, List<RawMaterialItem> rawMaterials, List<PaymentItem> payments)
+        public OwnerReportsPage()
         {
             InitializeComponent();
-            this.workers = workers;
-            this.rawMaterials = rawMaterials;
-            this.payments = payments;
-            LoadReports();
         }
 
-        private void LoadReports()
+        private void btnViewReport_Click(object sender, EventArgs e)
         {
-            lstWorkers.Items.Clear();
-            foreach (var w in workers)
-                lstWorkers.Items.Add(w.ToString());
+            string factory = comboFactory.SelectedItem?.ToString();
 
-            lstMaterials.Items.Clear();
-            foreach (var m in rawMaterials)
-                lstMaterials.Items.Add(m.ToString());
+            if (factory == null)
+            {
+                MessageBox.Show("Please select a factory.");
+                return;
+            }
 
-            lstPayments.Items.Clear();
-            foreach (var p in payments)
-                lstPayments.Items.Add(p.ToString());
+            DateTime fromDate = dtFrom.Value;
+            DateTime toDate = dtTo.Value;
+
+            // --- FUTURE BACKEND LOGIC WILL COME HERE ---
+            // Fetch data from Factory 1 & Factory 2 tables based on date range
+
+            txtReport.Text =
+                $"Report for {factory}\r\n" +
+                $"Date Range: {fromDate.ToShortDateString()} to {toDate.ToShortDateString()}\r\n\r\n" +
+                $"• Total Production: (sample data)\r\n" +
+                $"• Raw Material Used: (sample data)\r\n" +
+                $"• Workers Active: (sample data)\r\n" +
+                $"• Payments: (sample data)\r\n\r\n" +
+                $"✔ Report generated successfully!";
         }
     }
 }

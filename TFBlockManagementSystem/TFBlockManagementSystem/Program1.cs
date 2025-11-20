@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Factory1_Dashboard
+namespace TFBlockManagementSystem
 {
     internal static class Program1
     {
@@ -16,7 +16,7 @@ namespace Factory1_Dashboard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Factory1Dashboard());
+            Application.Run(new Form1());
         }
     }
-}
+} 

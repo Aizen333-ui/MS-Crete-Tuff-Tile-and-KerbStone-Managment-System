@@ -3,105 +3,116 @@
     partial class RawMaterial
     {
         private System.ComponentModel.IContainer components = null;
-        private Label lblTitle;
-        private Label lblMaterialID;
-        private Label lblMaterialName;
-        private Label lblQuantity;
-        private TextBox txtMaterialID;
-        private TextBox txtMaterialName;
-        private TextBox txtQuantity;
-        private Button btnAddMaterial;
-        private Button btnRemoveMaterial;
-        private ListBox lstMaterials;
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtQty;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateAdded;
+
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnRemove;
+
+        private System.Windows.Forms.DataGridView dataGridView1;
 
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
+            {
                 components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
         private void InitializeComponent()
         {
-            this.lblTitle = new Label();
-            this.lblMaterialID = new Label();
-            this.lblMaterialName = new Label();
-            this.lblQuantity = new Label();
-            this.txtMaterialID = new TextBox();
-            this.txtMaterialName = new TextBox();
-            this.txtQuantity = new TextBox();
-            this.btnAddMaterial = new Button();
-            this.btnRemoveMaterial = new Button();
-            this.lstMaterials = new ListBox();
+            this.label1 = new Label();
+            this.txtID = new TextBox();
+            this.label2 = new Label();
+            this.txtName = new TextBox();
+            this.label3 = new Label();
+            this.txtQty = new TextBox();
+            this.label4 = new Label();
+            this.dateAdded = new DateTimePicker();
+            this.btnAdd = new Button();
+            this.btnRemove = new Button();
+            this.dataGridView1 = new DataGridView();
+
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
 
-            // lblTitle
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(180, 20);
-            this.lblTitle.Size = new System.Drawing.Size(270, 32);
-            this.lblTitle.Text = "Manage Raw Materials";
+            // Material ID
+            this.label1.Text = "Material ID:";
+            this.label1.Location = new System.Drawing.Point(30, 30);
+            this.label1.AutoSize = true;
 
-            // lblMaterialID
-            this.lblMaterialID.AutoSize = true;
-            this.lblMaterialID.Location = new System.Drawing.Point(50, 80);
-            this.lblMaterialID.Size = new System.Drawing.Size(90, 20);
-            this.lblMaterialID.Text = "Material ID:";
+            this.txtID.Location = new System.Drawing.Point(150, 30);
+            this.txtID.Width = 200;
 
-            // lblMaterialName
-            this.lblMaterialName.AutoSize = true;
-            this.lblMaterialName.Location = new System.Drawing.Point(50, 120);
-            this.lblMaterialName.Size = new System.Drawing.Size(105, 20);
-            this.lblMaterialName.Text = "Material Name:";
+            // Material Name
+            this.label2.Text = "Material Name:";
+            this.label2.Location = new System.Drawing.Point(30, 80);
+            this.label2.AutoSize = true;
 
-            // lblQuantity
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(50, 160);
-            this.lblQuantity.Size = new System.Drawing.Size(65, 20);
-            this.lblQuantity.Text = "Quantity:";
+            this.txtName.Location = new System.Drawing.Point(150, 80);
+            this.txtName.Width = 200;
 
-            // txtMaterialID
-            this.txtMaterialID.Location = new System.Drawing.Point(170, 77);
-            this.txtMaterialID.Size = new System.Drawing.Size(200, 27);
+            // Quantity
+            this.label3.Text = "Quantity:";
+            this.label3.Location = new System.Drawing.Point(30, 130);
+            this.label3.AutoSize = true;
 
-            // txtMaterialName
-            this.txtMaterialName.Location = new System.Drawing.Point(170, 117);
-            this.txtMaterialName.Size = new System.Drawing.Size(200, 27);
+            this.txtQty.Location = new System.Drawing.Point(150, 130);
+            this.txtQty.Width = 200;
 
-            // txtQuantity
-            this.txtQuantity.Location = new System.Drawing.Point(170, 157);
-            this.txtQuantity.Size = new System.Drawing.Size(200, 27);
+            // Date Added
+            this.label4.Text = "Date Added:";
+            this.label4.Location = new System.Drawing.Point(30, 180);
+            this.label4.AutoSize = true;
 
-            // btnAddMaterial
-            this.btnAddMaterial.Location = new System.Drawing.Point(400, 75);
-            this.btnAddMaterial.Size = new System.Drawing.Size(120, 30);
-            this.btnAddMaterial.Text = "Add Material";
-            this.btnAddMaterial.Click += new System.EventHandler(this.btnAddMaterial_Click);
+            this.dateAdded.Location = new System.Drawing.Point(150, 180);
+            this.dateAdded.Width = 200;
 
-            // btnRemoveMaterial
-            this.btnRemoveMaterial.Location = new System.Drawing.Point(400, 115);
-            this.btnRemoveMaterial.Size = new System.Drawing.Size(120, 30);
-            this.btnRemoveMaterial.Text = "Remove Material";
-            this.btnRemoveMaterial.Click += new System.EventHandler(this.btnRemoveMaterial_Click);
+            // Add Button
+            this.btnAdd.Text = "Add Material";
+            this.btnAdd.Location = new System.Drawing.Point(150, 230);
+            this.btnAdd.Width = 120;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 
-            // lstMaterials
-            this.lstMaterials.Location = new System.Drawing.Point(50, 200);
-            this.lstMaterials.Size = new System.Drawing.Size(470, 200);
+            // Remove Button
+            this.btnRemove.Text = "Remove Material";
+            this.btnRemove.Location = new System.Drawing.Point(280, 230);
+            this.btnRemove.Width = 150;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
 
-            // RawMaterial Form
-            this.ClientSize = new System.Drawing.Size(550, 450);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblMaterialID);
-            this.Controls.Add(this.lblMaterialName);
-            this.Controls.Add(this.lblQuantity);
-            this.Controls.Add(this.txtMaterialID);
-            this.Controls.Add(this.txtMaterialName);
-            this.Controls.Add(this.txtQuantity);
-            this.Controls.Add(this.btnAddMaterial);
-            this.Controls.Add(this.btnRemoveMaterial);
-            this.Controls.Add(this.lstMaterials);
-            this.Name = "RawMaterial";
-            this.Text = "Raw Materials Management";
+            // DataGridView
+            this.dataGridView1.Location = new System.Drawing.Point(30, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(550, 250);
+            this.dataGridView1.ColumnCount = 4;
+            this.dataGridView1.Columns[0].Name = "Material ID";
+            this.dataGridView1.Columns[1].Name = "Material Name";
+            this.dataGridView1.Columns[2].Name = "Quantity";
+            this.dataGridView1.Columns[3].Name = "Date Added";
+
+            // UserControl Setup
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtQty);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dateAdded);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.dataGridView1);
+
+            this.Size = new System.Drawing.Size(650, 600);
+
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }

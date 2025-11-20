@@ -8,30 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="AddandViewRawMaterial.cs" />
-    <Compile Remove="AddandViewRawMaterial.Designer.cs" />
-    <Compile Remove="BuyingandSelling.cs" />
-    <Compile Remove="BuyingandSelling.Designer.cs" />
-    <Compile Remove="DataModels.cs" />
-    <Compile Remove="Factory.cs" />
-    <Compile Remove="Factory1.cs" />
-    <Compile Remove="Factory1.Designer.cs" />
-    <Compile Remove="Factory2.cs" />
-    <Compile Remove="Factory2.Designer.cs" />
-    <Compile Remove="OnwerDashBoard.cs" />
-    <Compile Remove="OnwerDashBoard.Designer.cs" />
-    <Compile Remove="WorkersAddandView.cs" />
-    <Compile Remove="WorkersAddandView.Designer.cs" />
-  </ItemGroup>
+  
 
-  <ItemGroup>
-    <EmbeddedResource Remove="AddandViewRawMaterial.resx" />
-    <EmbeddedResource Remove="BuyingandSelling.resx" />
-    <EmbeddedResource Remove="Factory1.resx" />
-    <EmbeddedResource Remove="Factory2.resx" />
-    <EmbeddedResource Remove="OnwerDashBoard.resx" />
-    <EmbeddedResource Remove="WorkersAddandView.resx" />
-  </ItemGroup>
+ 
 
 </Project>

@@ -1,68 +1,44 @@
 ﻿using System;
-using System.IO;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace TFBlockManagementSystem
 {
-    public partial class WorkersAddandView : Form
+    public partial class WorkersAddandView : UserControl
     {
-        string filePath = @"Data/workers.txt";
-
         public WorkersAddandView()
         {
             InitializeComponent();
-            Directory.CreateDirectory("Data");
         }
 
-        private void ManageWorkers_Load(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            LoadWorkers();
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            string name = textBoxName.Text.Trim();
-            string role = textBoxRole.Text.Trim();
-            string wage = textBoxWage.Text.Trim();
-
-            if (name == "" || role == "" || wage == "")
+            if (txtName.Text == "" || txtRole.Text == "" || txtWage.Text == "")
             {
-                MessageBox.Show("Please fill all fields.");
+                MessageBox.Show("Please fill all fields!", "Warning");
                 return;
             }
 
-            string workerInfo = $"{name},{role},{wage}";
-            File.AppendAllText(filePath, workerInfo + Environment.NewLine);
-            LoadWorkers();
+            dataGridView1.Rows.Add(
+                txtName.Text,
+                txtRole.Text,
+                txtWage.Text + " PKR"
+            );
 
-            textBoxName.Clear();
-            textBoxRole.Clear();
-            textBoxWage.Clear();
+            txtName.Clear();
+            txtRole.Clear();
+            txtWage.Clear();
         }
 
-        private void buttonRemove_Click(object sender, EventArgs e)
+        private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (listBoxWorkers.SelectedItem == null)
+            if (dataGridView1.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Select a worker to remove.");
+                MessageBox.Show("Select a worker to remove!");
                 return;
             }
 
-            string selected = listBoxWorkers.SelectedItem.ToString();
-            var lines = File.ReadAllLines(filePath);
-            File.WriteAllLines(filePath, Array.FindAll(lines, line => line != selected));
-
-            LoadWorkers();
-        }
-
-        private void LoadWorkers()
-        {
-            listBoxWorkers.Items.Clear();
-            if (File.Exists(filePath))
-            {
-                foreach (string line in File.ReadAllLines(filePath))
-                    listBoxWorkers.Items.Add(line);
-            }
+           
         }
     }
 }

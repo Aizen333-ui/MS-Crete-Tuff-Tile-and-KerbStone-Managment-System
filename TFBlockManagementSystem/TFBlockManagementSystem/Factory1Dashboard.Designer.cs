@@ -130,6 +130,6 @@
             this.Load += new System.EventHandler(this.Factory1Dashboard_Load);
         }
 
-        #endregion
+        
     }
 }

@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Factory1_Dashboard
+namespace TFBlockManagementSystem
 {
     public partial class Factory1Dashboard : Form
     {

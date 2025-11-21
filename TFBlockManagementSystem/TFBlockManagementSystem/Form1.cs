@@ -15,6 +15,7 @@ namespace TFBlockManagementSystem
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            // EMPTY CHECK
             if (username == "" || password == "")
             {
                 MessageBox.Show("Please enter username and password.", "Warning",
@@ -22,45 +23,39 @@ namespace TFBlockManagementSystem
                 return;
             }
 
-            // -------------- OWNER LOGIN --------------
+            // ===================== OWNER LOGIN =====================
             if (username == "owner" && password == "owner123")
             {
                 MessageBox.Show("Owner logged in!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                OwnerDashboard owner = new OwnerDashboard();
+                // Make sure the form name exactly matches your class:
+                // public partial class OwnerDashBoard : Form
+                OwnerDashBoard owner = new OwnerDashBoard();
 
-                this.Hide();        // Hide login form
-                owner.FormClosed += (s, args) => this.Show();  // Show login when dashboard closes
+                this.Hide();
+                owner.FormClosed += (s, args) => this.Show();
                 owner.Show();
                 return;
             }
 
-            // -------------- MANAGER LOGIN --------------
-            if (username == "manager" && password == "manager123")
-            {
-                MessageBox.Show("Manager logged in!");
-
-                // TODO: manager dashboard here...
-
-                return;
-            }
-
-            // -------------- FACTORY 1 LOGIN --------------
+            // ===================== FACTORY 1 LOGIN =====================
             if (username == "factory1" && password == "f1pass")
             {
-                MessageBox.Show("Factory 1 logged in!");
+                MessageBox.Show("Factory 1 logged in!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // TODO: factory 1 dashboard...
+                Factory1Dashboard factory1 = new Factory1Dashboard();
 
+                this.Hide();
+                factory1.FormClosed += (s, args) => this.Show();
+                factory1.Show();
                 return;
             }
 
-            // INVALID LOGIN
+            // ===================== INVALID LOGIN =====================
             MessageBox.Show("Invalid username or password!", "Error",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         }
-       
     }
 }

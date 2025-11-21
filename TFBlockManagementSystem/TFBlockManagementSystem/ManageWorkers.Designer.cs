@@ -1,4 +1,4 @@
-﻿namespace TFBlockManagementSystem
+﻿/*namespace TFBlockManagementSystem
 {
     partial class ManageWorkers
     {
@@ -93,3 +93,4 @@
         }
     }
 }
+*/

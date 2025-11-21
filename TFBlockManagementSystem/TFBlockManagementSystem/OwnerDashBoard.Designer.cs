@@ -1,6 +1,6 @@
 ﻿namespace TFBlockManagementSystem
 {
-    partial class OwnerDashboard
+    partial class OwnerDashBoard
     {
         private System.ComponentModel.IContainer components = null;
 

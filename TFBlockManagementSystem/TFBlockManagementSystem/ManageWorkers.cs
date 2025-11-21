@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -6,9 +6,9 @@ namespace TFBlockManagementSystem
 {
     public partial class ManageWorkers : Form
     {
-        private List<WorkerItem> workers;
+        private List<ManageWorkers> workers;
 
-        public ManageWorkers(List<WorkerItem> workers)
+        public ManageWorkers(List<ManageWorkers> workers)
         {
             InitializeComponent();
             this.workers = workers;
@@ -42,7 +42,7 @@ namespace TFBlockManagementSystem
             }
 
             // Add new worker
-            workers.Add(new WorkerItem(id, name));
+            workers.Add(new ManageWorkers(id, name));
             MessageBox.Show("Worker added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             ClearInputs();
@@ -58,7 +58,7 @@ namespace TFBlockManagementSystem
                 return;
             }
 
-            WorkerItem worker = workers.Find(w => w.ID == id);
+            ManageWorkers worker = workers.Find(w => w.ID == id);
             if (worker == null)
             {
                 MessageBox.Show("Worker not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -89,3 +89,4 @@ namespace TFBlockManagementSystem
         }
     }
 }
+*/

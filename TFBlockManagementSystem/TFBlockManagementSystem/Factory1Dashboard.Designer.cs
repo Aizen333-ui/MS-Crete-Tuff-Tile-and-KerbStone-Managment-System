@@ -1,4 +1,4 @@
-﻿namespace Factory1_Dashboard
+﻿namespace TFBlockManagementSystem
 {
     partial class Factory1Dashboard
     {

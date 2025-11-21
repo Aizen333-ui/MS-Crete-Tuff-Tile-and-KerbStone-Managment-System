@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
 {
-    public partial class OwnerDashboard : Form
+    public partial class OwnerDashBoard : Form
     {
-        public OwnerDashboard()
+        public OwnerDashBoard()
         {
             InitializeComponent();
         }

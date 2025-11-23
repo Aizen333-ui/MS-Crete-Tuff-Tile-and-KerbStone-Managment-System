@@ -30,6 +30,8 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.panelLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+
 
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();

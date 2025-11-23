@@ -22,7 +22,6 @@ C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.sourcelink.json
 C:\Users\talha\source\repos\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Reports.resources
 D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Form1.resources
-D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.ManageWorkers.resources
 D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OwnerDashBoard.resources
 D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Payments.resources
 D:\S-E Project\Project\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Properties.Resources.resources

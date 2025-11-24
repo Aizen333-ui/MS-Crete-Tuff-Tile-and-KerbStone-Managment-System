@@ -33,7 +33,7 @@ namespace TFBlockManagementSystem
                 $"• Raw Material Used: (sample data)\r\n" +
                 $"• Workers Active: (sample data)\r\n" +
                 $"• Payments: (sample data)\r\n\r\n" +
-                $"✔ Report generated successfully!";
+                $" Report generated successfully!";
         }
     }
 }

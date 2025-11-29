@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TFBlockManagementSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c64195ab8f672288a8e6a80a91f806786c47354")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ac017a1ef54e86aacf44b4454a8f1737ba16873")]
 [assembly: System.Reflection.AssemblyProductAttribute("TFBlockManagementSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TFBlockManagementSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

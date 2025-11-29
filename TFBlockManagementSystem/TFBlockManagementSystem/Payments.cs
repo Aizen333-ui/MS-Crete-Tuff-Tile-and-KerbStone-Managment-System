@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Text.RegularExpressions;
+using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
@@ -12,7 +14,6 @@ namespace TFBlockManagementSystem
         {
             InitializeComponent();
 
-            // Reason items
             cmbReason.Items.AddRange(new object[]
             {
                 "Cement Purchase",
@@ -28,110 +29,133 @@ namespace TFBlockManagementSystem
 
             cmbReason.DropDownStyle = ComboBoxStyle.DropDownList;
 
-           
+            LoadPayments();
         }
 
-        // AUTO ADD "Rs "
-        private bool isEditing = false;
+        private void LoadPayments()
+        {
+            try
+            {
+                DataTable dt = DbHelper.ExecuteDataTable("SELECT * FROM Payments ORDER BY PaymentID DESC");
+
+                dataGridView1.AutoGenerateColumns = true;
+                dataGridView1.DataSource = dt;
+
+                // Amount column Rs format
+                if (dataGridView1.Columns.Contains("Amount"))
+                {
+                    dataGridView1.Columns["Amount"].DefaultCellStyle.Format = "'Rs '0.00";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading payments: " + ex.Message);
+            }
+        }
+
+
         private void TxtAmount_TextChanged(object sender, EventArgs e)
         {
-            if (isEditing) return;
-
-            isEditing = true;
-
-            string txt = txtAmount.Text.Replace("Rs", "").Replace(" ", "");
-            if (decimal.TryParse(txt, out decimal amount))
+            if (decimal.TryParse(txtAmount.Text.Replace("Rs", "").Trim(), out decimal amount))
             {
                 txtAmount.Text = "Rs " + amount.ToString();
                 txtAmount.SelectionStart = txtAmount.Text.Length;
             }
-
-            isEditing = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            error.Clear();
-
             string id = txtID.Text.Trim();
             string amountText = txtAmount.Text.Replace("Rs", "").Trim();
             string reason = cmbReason.Text.Trim();
             DateTime date = datePaid.Value;
 
-            //  PAYMENT ID VALIDATION 
             if (!Regex.IsMatch(id, @"^[0-9]{3,10}$"))
             {
-                MessageBox.Show("Payment ID must be 3–10 digits only.");
-               
+                MessageBox.Show("Payment ID must be 3–10 digits.");
                 return;
             }
 
-            // Duplicate check
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == id)
-                {
-                   
-                    MessageBox.Show("Payment ID already exists!");
-                    return;
-                }
-            }
-
-            //  AMOUNT VALIDATION 
             if (!decimal.TryParse(amountText, out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Enter valid amount  ");
-                return;
-            }
-            if (amount > 10000000)
-            {
-                MessageBox.Show( "Amount limit is 10,000,000");
+                MessageBox.Show("Enter valid amount.");
                 return;
             }
 
-            string formattedAmount = "Rs " + amount.ToString("N0");
-
-            //  REASON VALIDATION 
             if (string.IsNullOrEmpty(reason))
             {
-                MessageBox.Show( "Reason is required");
+                MessageBox.Show("Reason required.");
                 return;
             }
-
-            //  DATE VALIDATION 
-            DateTime selectedDate = datePaid.Value.Date;
-            DateTime today = DateTime.Today;
-
-            if (selectedDate > today)
+            if (date.Date > DateTime.Today)
             {
-                MessageBox.Show( "Future date not allowed");
+                MessageBox.Show("Future date not allowed. Only today or past date allowed.");
                 return;
             }
 
 
-            //  ADD TO DATAGRID 
-            dataGridView1.Rows.Add(
-                id,
-                formattedAmount,
-                reason,
-                date.ToShortDateString()
-            );
 
-            // Clear fields
-            txtID.Clear();
-            txtAmount.Clear();
-            cmbReason.SelectedIndex = -1;
+            try
+            {
+                string query =
+                    "INSERT INTO Payments (PaymentID, Amount, Reason, DatePaid) VALUES (@id, @amount, @reason, @date)";
+
+                SqlParameter[] p =
+                {
+                    new SqlParameter("@id", Convert.ToInt32(id)),
+                    new SqlParameter("@amount", amount),
+                    new SqlParameter("@reason", reason),
+                    new SqlParameter("@date", date)
+                };
+
+                DbHelper.ExecuteNonQuery(query, p);
+                MessageBox.Show("Payment added!");
+
+                LoadPayments();
+
+                txtID.Clear();
+                txtAmount.Clear();
+                cmbReason.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding: " + ex.Message);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Select a row to delete!", "Warning");
+                MessageBox.Show("Select a row to delete!");
                 return;
             }
 
-            dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+            int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["PaymentID"].Value);
+
+            // ✔ Confirmation message
+            DialogResult dr = MessageBox.Show(
+                "Are you sure you want to delete this payment?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (dr != DialogResult.Yes)
+                return;
+
+            try
+            {
+                DbHelper.ExecuteNonQuery("DELETE FROM Payments WHERE PaymentID = @id",
+                    new SqlParameter[] { new SqlParameter("@id", id) });
+
+                MessageBox.Show("Payment deleted!");
+                LoadPayments();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error deleting: " + ex.Message);
+            }
         }
     }
 }

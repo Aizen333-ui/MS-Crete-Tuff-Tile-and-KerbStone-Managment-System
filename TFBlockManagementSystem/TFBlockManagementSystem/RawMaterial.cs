@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Text.RegularExpressions;
+using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
@@ -9,21 +11,39 @@ namespace TFBlockManagementSystem
         public RawMaterial()
         {
             InitializeComponent();
+            LoadMaterials();
         }
 
-        //   Unit Auto 
+        // ----------------------------
+        // LOAD MATERIALS
+        // ----------------------------
+        private void LoadMaterials()
+        {
+            try
+            {
+                DataTable dt = DbHelper.ExecuteDataTable("SELECT * FROM RawMaterials ORDER BY MaterialID DESC");
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading materials: " + ex.Message);
+            }
+        }
+
+        // ----------------------------
+        // GET UNIT BASED ON MATERIAL
+        // ----------------------------
         private string GetUnit(string materialName)
         {
-            switch (materialName)
+            return materialName switch
             {
-                case "Cement": return "Tons";
-                case "Sand": return "CFT";
-                case "Crush": return "CFT";
-                case "Steel": return "KG";
-                case "Fly Ash": return "Bags";
-                case "Mold Oil": return "Liters";
-                default: return "";
-            }
+                "Cement" => "Tons",
+                "Sand" => "CFT",
+                "Crush" => "CFT",
+                "Steel" => "KG",
+                "Mold Oil" => "Liters",
+                _ => ""
+            };
         }
 
         private void cmbName_SelectedIndexChanged(object sender, EventArgs e)
@@ -31,63 +51,141 @@ namespace TFBlockManagementSystem
             txtUnit.Text = GetUnit(cmbName.SelectedItem?.ToString() ?? "");
         }
 
+        // ----------------------------
+        // CHECK DUPLICATE ID
+        // ----------------------------
+        private bool MaterialIdExists(string id)
+        {
+            string query = "SELECT COUNT(*) FROM RawMaterials WHERE MaterialID = @id";
+
+            object? result = DbHelper.ExecuteScalar(
+                query,
+                new SqlParameter[] { new SqlParameter("@id", id) }
+            );
+
+            if (result == null)
+                return false;
+
+            return Convert.ToInt32(result) > 0;
+        }
+
+
+        // ----------------------------
+        // ADD MATERIAL
+        // ----------------------------
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string id = txtID.Text.Trim();
-            string name = cmbName.SelectedItem?.ToString() ?? "";
+            string name = cmbName.Text.Trim();
             string qty = txtQty.Text.Trim();
             string unit = txtUnit.Text.Trim();
+            DateTime date = dateAdded.Value;
 
-            // Required fields
+            // ----------- VALIDATION SECTION -----------
             if (id == "" || name == "" || qty == "" || unit == "")
             {
-                MessageBox.Show("Please fill all fields!", "Warning");
+                MessageBox.Show("Please fill all fields!");
                 return;
             }
 
-            // Material ID validation
-            if (!Regex.IsMatch(id, @"^[a-zA-Z0-9]{3,10}$"))
+            // ID must be numeric only (1–10 digits)
+            if (!Regex.IsMatch(id, @"^[0-9]{1,10}$"))
             {
-                MessageBox.Show("Material ID must be 3–10 characters (letters/numbers only).\nExample: RM001", "Invalid ID");
+                MessageBox.Show("Material ID must contain **numbers only** (1–10 digits).\nExample: 1, 25, 788, 5001");
                 return;
             }
 
-            // Duplicate ID
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+
+            // Duplicate ID check
+            if (MaterialIdExists(id))
             {
-                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == id)
-                {
-                    MessageBox.Show("Material ID already exists!", "Duplicate ID");
-                    return;
-                }
+                MessageBox.Show("This Material ID already exists!");
+                return;
             }
 
-            // Quantity
+            // Quantity validation
             if (!decimal.TryParse(qty, out decimal quantity) || quantity <= 0)
             {
-                MessageBox.Show("Quantity must be a number greater than 0.", "Invalid Quantity");
+                MessageBox.Show("Quantity must be a positive number.");
                 return;
             }
 
-            // ADD ROW
-            dataGridView1.Rows.Add(id, name, quantity + " " + unit, dateAdded.Value.ToShortDateString());
+            // ----------- INSERT SECTION -----------
+            try
+            {
+                // CAST to remove .0000
+                string query =
+                    "INSERT INTO RawMaterials (MaterialID, MaterialName, Quantity, Unit, DateAdded) " +
+                    "VALUES (@id, @name, CAST(@qty AS decimal(18,0)), @unit, @date)";
 
-            // CLEAR
-            txtID.Clear();
-            txtQty.Clear();
-            txtUnit.Clear();
-            cmbName.SelectedIndex = -1;
+                SqlParameter[] p =
+                {
+                    new SqlParameter("@id", id),
+                    new SqlParameter("@name", name),
+                    new SqlParameter("@qty", quantity),
+                    new SqlParameter("@unit", unit),
+                    new SqlParameter("@date", date)
+                };
+
+                DbHelper.ExecuteNonQuery(query, p);
+
+                MessageBox.Show("Material added successfully!");
+
+                LoadMaterials();
+
+                txtID.Clear();
+                txtQty.Clear();
+                txtUnit.Clear();
+                cmbName.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding material: " + ex.Message);
+            }
         }
 
+
+        // ----------------------------
+        // REMOVE MATERIAL
+        // ----------------------------
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count == 0)
             {
-                dataGridView1.Rows.Remove(dataGridView1.SelectedRows[0]);
+                MessageBox.Show("Select a row to remove!");
+                return;
             }
-            else
+
+            string id = dataGridView1.SelectedRows[0].Cells["MaterialID"].Value?.ToString() ?? "";
+
+            if (id == "")
             {
-                MessageBox.Show("Please select a row to remove!");
+                MessageBox.Show("Invalid selection!");
+                return;
+            }
+
+            DialogResult dr = MessageBox.Show(
+                "Are you sure you want to delete this material?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (dr != DialogResult.Yes)
+                return;
+
+            try
+            {
+                DbHelper.ExecuteNonQuery(
+                    "DELETE FROM RawMaterials WHERE MaterialID = @id",
+                    new SqlParameter[] { new SqlParameter("@id", id) });
+
+                MessageBox.Show("Material removed!");
+                LoadMaterials();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error removing material: " + ex.Message);
             }
         }
     }

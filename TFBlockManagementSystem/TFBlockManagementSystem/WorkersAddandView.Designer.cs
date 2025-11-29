@@ -45,26 +45,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
 
-            // Worker Name Label
+            // Worker Name
             this.lblName.Text = "Worker Name:";
             this.lblName.Location = new System.Drawing.Point(30, 30);
-
             this.txtName.Location = new System.Drawing.Point(150, 30);
             this.txtName.Width = 220;
 
-            // Role Label
+            // Role
             this.lblRole.Text = "Job / Role:";
             this.lblRole.Location = new System.Drawing.Point(30, 80);
-
             this.cmbRole.Location = new System.Drawing.Point(150, 80);
             this.cmbRole.Width = 220;
 
-            // Wage Label
+            // Wage
             this.lblWage.Text = "Daily Wage (PKR):";
             this.lblWage.Location = new System.Drawing.Point(30, 130);
-
             this.txtWage.Location = new System.Drawing.Point(150, 130);
             this.txtWage.Width = 220;
+            this.txtWage.TextChanged += new System.EventHandler(this.TxtWage_TextChanged);
 
             // Add Button
             this.btnAdd.Text = "Add Worker";
@@ -87,16 +85,11 @@
             // DataGridView
             this.dataGridView1.Location = new System.Drawing.Point(30, 250);
             this.dataGridView1.Size = new System.Drawing.Size(650, 300);
-
-            this.dataGridView1.ColumnCount = 3;
-            this.dataGridView1.Columns[0].Name = "Worker Name";
-            this.dataGridView1.Columns[1].Name = "Job / Role";
-            this.dataGridView1.Columns[2].Name = "Daily Wage (PKR)";
-            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Controls
+            // Add controls
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
 

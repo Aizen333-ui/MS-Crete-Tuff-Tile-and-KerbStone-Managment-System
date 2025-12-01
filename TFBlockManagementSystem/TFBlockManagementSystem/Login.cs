@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -50,6 +50,20 @@ namespace TFBlockManagementSystem
                 this.Hide();
                 factory1.FormClosed += (s, args) => this.Show();
                 factory1.Show();
+                return;
+            }
+
+            // ===================== FACTORY 1 LOGIN =====================
+            if (username == "factory2" && password == "f2pass")
+            {
+                MessageBox.Show("Factory 2 logged in!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Factory2Dashboard factory2 = new Factory2Dashboard();
+
+                this.Hide();
+                factory2.FormClosed += (s, args) => this.Show();
+                factory2.Show();
                 return;
             }
 

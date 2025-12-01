@@ -192,7 +192,6 @@ C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TF
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.csproj.AssemblyReference.cache
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Factory1Dashboard.resources
-C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Form1.resources
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.OwnerDashBoard.resources
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Payments.resources
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Properties.Resources.resources
@@ -214,3 +213,8 @@ C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TF
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.pdb
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.genruntimeconfig.cache
 C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\ref\TFBlockManagementSystem.dll
+C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Factory2Dashboard.resources
+C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\TFBlockManagementSystem.Login.resources
+C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory2_Dashboard.Pages.RawMaterialUsage2.resources
+C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory2_Dashboard.Pages.RecordProduction2.resources
+C:\Users\talha\Source\Repos\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\TFBlockManagementSystem\TFBlockManagementSystem\obj\Debug\net8.0-windows\Factory2_Dashboard.Pages.Report2.resources

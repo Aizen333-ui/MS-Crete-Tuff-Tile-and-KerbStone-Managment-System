@@ -1,6 +1,6 @@
 ﻿namespace TFBlockManagementSystem
 {
-    partial class Form1
+    partial class Login
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -119,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(600, 500);
             this.Controls.Add(this.panelLogin);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
 

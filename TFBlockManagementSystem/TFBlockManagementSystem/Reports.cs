@@ -26,30 +26,35 @@ namespace TFBlockManagementSystem
             DateTime fromDate = dtFrom.Value.Date;
             DateTime toDate = dtTo.Value.Date;
 
-            // Map factory names to IDs in your database
-            int factoryId = factory switch
-            {
-                "Factory 1" => 1,
-                "Factory 2" => 2,
-                _ => 0
-            };
+            // Map factory names to IDs and table names
+            int factoryId;
+            string tableName;
 
-            if (factoryId == 0)
+            switch (factory)
             {
-                MessageBox.Show("Unknown factory selected.");
-                return;
+                case "Factory 1":
+                    factoryId = 1;
+                    tableName = "DailyReports1";   // Factory 1 table
+                    break;
+                case "Factory 2":
+                    factoryId = 2;
+                    tableName = "DailyReports2";  // Factory 2 table
+                    break;
+                default:
+                    MessageBox.Show("Unknown factory selected.");
+                    return;
             }
 
-            // SQL connection string
             string connStr = @"Data Source=TALHA\SQLEXPRESS;Initial Catalog=MSBlockDB;Integrated Security=True;";
 
             try
             {
                 using (SqlConnection con = new SqlConnection(connStr))
                 {
-                    string query = @"
-                SELECT ReportDate, ReportText 
-                FROM DailyReports1
+                    // Dynamically use the table name
+                    string query = $@"
+                SELECT ReportDate, ReportText
+                FROM {tableName}
                 WHERE ManagerID = @fid
                   AND ReportDate BETWEEN @from AND @to
                 ORDER BY ReportDate ASC";
@@ -87,6 +92,7 @@ namespace TFBlockManagementSystem
                 MessageBox.Show("Error fetching reports:\n" + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
     }
 }

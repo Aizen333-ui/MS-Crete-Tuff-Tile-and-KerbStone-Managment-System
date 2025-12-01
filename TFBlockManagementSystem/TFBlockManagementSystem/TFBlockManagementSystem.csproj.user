@@ -4,7 +4,16 @@
     <Compile Update="Factory1Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="RawMaterialUsage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RecordProduction2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Factory2Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="OwnerDashBoard.cs">
@@ -26,6 +35,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Reports2.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="WorkersAddandView.cs">

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace TFBlockManagementSystem
@@ -20,20 +23,70 @@ namespace TFBlockManagementSystem
                 return;
             }
 
-            DateTime fromDate = dtFrom.Value;
-            DateTime toDate = dtTo.Value;
+            DateTime fromDate = dtFrom.Value.Date;
+            DateTime toDate = dtTo.Value.Date;
 
-            // --- FUTURE BACKEND LOGIC WILL COME HERE ---
-            // Fetch data from Factory 1 & Factory 2 tables based on date range
+            // Map factory names to IDs in your database
+            int factoryId = factory switch
+            {
+                "Factory 1" => 1,
+                "Factory 2" => 2,
+                _ => 0
+            };
 
-            txtReport.Text =
-                $"Report for {factory}\r\n" +
-                $"Date Range: {fromDate.ToShortDateString()} to {toDate.ToShortDateString()}\r\n\r\n" +
-                $"• Total Production: (sample data)\r\n" +
-                $"• Raw Material Used: (sample data)\r\n" +
-                $"• Workers Active: (sample data)\r\n" +
-                $"• Payments: (sample data)\r\n\r\n" +
-                $" Report generated successfully!";
+            if (factoryId == 0)
+            {
+                MessageBox.Show("Unknown factory selected.");
+                return;
+            }
+
+            // SQL connection string
+            string connStr = @"Data Source=TALHA\SQLEXPRESS;Initial Catalog=MSBlockDB;Integrated Security=True;";
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connStr))
+                {
+                    string query = @"
+                SELECT ReportDate, ReportText 
+                FROM DailyReports1
+                WHERE ManagerID = @fid
+                  AND ReportDate BETWEEN @from AND @to
+                ORDER BY ReportDate ASC";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@fid", factoryId);
+                        cmd.Parameters.AddWithValue("@from", fromDate);
+                        cmd.Parameters.AddWithValue("@to", toDate);
+
+                        con.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (!reader.HasRows)
+                            {
+                                txtReport.Text = $"No reports found for {factory} between {fromDate.ToShortDateString()} and {toDate.ToShortDateString()}.";
+                                return;
+                            }
+
+                            txtReport.Clear();
+                            while (reader.Read())
+                            {
+                                DateTime reportDate = reader.GetDateTime(0);
+                                string reportText = reader.GetString(1);
+
+                                txtReport.AppendText($"--- Report Date: {reportDate.ToShortDateString()} ---\r\n");
+                                txtReport.AppendText(reportText + "\r\n\r\n");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error fetching reports:\n" + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }

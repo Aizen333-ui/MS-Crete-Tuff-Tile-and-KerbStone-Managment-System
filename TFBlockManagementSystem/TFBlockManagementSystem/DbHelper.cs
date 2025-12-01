@@ -4,7 +4,7 @@ using Microsoft.Data.SqlClient;
 public static class DbHelper
 {
     private static readonly string _conStr =
-        "Server=DESKTOP-PUASTO4\\SQLEXPRESS; Database=MSBlockDB; User ID=MSUser; Password=Huraira123; TrustServerCertificate=True;";
+        "Server=TALHA\\SQLEXPRESS; Database=MSBlockDB; Integrated Security=True; TrustServerCertificate=True;";
 
     // -----------------------------
     // SELECT → DataTable

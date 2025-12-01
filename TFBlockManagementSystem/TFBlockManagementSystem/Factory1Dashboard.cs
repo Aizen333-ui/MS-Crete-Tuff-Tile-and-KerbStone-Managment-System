@@ -11,27 +11,27 @@ namespace TFBlockManagementSystem
         public Factory1Dashboard()
         {
             InitializeComponent();
-            this.DoubleBuffered = true; // Smooth UI
+            this.DoubleBuffered = true;
         }
 
         private void Factory1Dashboard_Load(object sender, EventArgs e)
         {
-            // TRANSPARENT SIDE MENU (Dark Glass Effect)
+            // Transparent side menu
             panelSideMenu.BackColor = Color.FromArgb(150, 30, 30, 30);
 
-            // BUTTON STYLING
+            // Button styling
             StyleButton(btnRecord);
             StyleButton(btnRaw);
             StyleButton(btnReport);
 
-            // LOGOUT BUTTON RED THEME
+            // Logout button style
             btnLogout.BackColor = Color.Red;
             btnLogout.ForeColor = Color.White;
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.FlatAppearance.BorderSize = 0;
         }
 
-        // UNIVERSAL BUTTON STYLE
+        // Universal style method
         private void StyleButton(Button btn)
         {
             btn.FlatStyle = FlatStyle.Flat;
@@ -42,7 +42,7 @@ namespace TFBlockManagementSystem
             btn.MouseLeave += (s, e) => btn.BackColor = Color.FromArgb(50, 50, 50);
         }
 
-        // LOAD USER CONTROL INSIDE MAIN PANEL
+        // Load content inside main panel
         private void LoadPage(UserControl page)
         {
             panelMain.Controls.Clear();
@@ -51,7 +51,7 @@ namespace TFBlockManagementSystem
             page.BringToFront();
         }
 
-        // BUTTON CALLS
+        // BUTTON NAVIGATION
         private void btnRecord_Click(object sender, EventArgs e)
         {
             LoadPage(new RecordProduction1());
@@ -69,7 +69,11 @@ namespace TFBlockManagementSystem
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("You want to Logout?", "Confirm",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         // GRADIENT BACKGROUND
@@ -77,8 +81,8 @@ namespace TFBlockManagementSystem
         {
             LinearGradientBrush brush = new LinearGradientBrush(
                 this.ClientRectangle,
-                Color.FromArgb(230, 230, 230),  // Light top color
-                Color.FromArgb(180, 180, 200),  // Soft bottom color
+                Color.FromArgb(230, 230, 230),
+                Color.FromArgb(180, 180, 200),
                 90F);
 
             e.Graphics.FillRectangle(brush, this.ClientRectangle);

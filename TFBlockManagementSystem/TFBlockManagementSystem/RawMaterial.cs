@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Data;
+using System.Linq;
 using System.Text.RegularExpressions;
 using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
+using TFBlockManagementSystem;
 
 namespace TFBlockManagementSystem
 {
@@ -14,10 +16,11 @@ namespace TFBlockManagementSystem
             LoadMaterials();
         }
 
-        // ----------------------------
-        // LOAD MATERIALS
-        // ----------------------------
-        private void LoadMaterials()
+
+    // ----------------------------
+    // LOAD MATERIALS INTO DATAGRID
+    // ----------------------------
+    private void LoadMaterials()
         {
             try
             {
@@ -52,23 +55,14 @@ namespace TFBlockManagementSystem
         }
 
         // ----------------------------
-        // CHECK DUPLICATE ID
+        // CHECK DUPLICATE MATERIAL ID
         // ----------------------------
         private bool MaterialIdExists(string id)
         {
             string query = "SELECT COUNT(*) FROM RawMaterials WHERE MaterialID = @id";
-
-            object? result = DbHelper.ExecuteScalar(
-                query,
-                new SqlParameter[] { new SqlParameter("@id", id) }
-            );
-
-            if (result == null)
-                return false;
-
-            return Convert.ToInt32(result) > 0;
+            object? result = DbHelper.ExecuteScalar(query, new SqlParameter[] { new SqlParameter("@id", id) });
+            return result != null && Convert.ToInt32(result) > 0;
         }
-
 
         // ----------------------------
         // ADD MATERIAL
@@ -81,56 +75,47 @@ namespace TFBlockManagementSystem
             string unit = txtUnit.Text.Trim();
             DateTime date = dateAdded.Value;
 
-            // ----------- VALIDATION SECTION -----------
-            if (id == "" || name == "" || qty == "" || unit == "")
+            if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(qty) || string.IsNullOrEmpty(unit))
             {
                 MessageBox.Show("Please fill all fields!");
                 return;
             }
 
-            // ID must be numeric only (1–10 digits)
             if (!Regex.IsMatch(id, @"^[0-9]{1,10}$"))
             {
-                MessageBox.Show("Material ID must contain **numbers only** (1–10 digits).\nExample: 1, 25, 788, 5001");
+                MessageBox.Show("Material ID must contain numbers only (1–10 digits).");
                 return;
             }
 
-
-            // Duplicate ID check
             if (MaterialIdExists(id))
             {
                 MessageBox.Show("This Material ID already exists!");
                 return;
             }
 
-            // Quantity validation
             if (!decimal.TryParse(qty, out decimal quantity) || quantity <= 0)
             {
                 MessageBox.Show("Quantity must be a positive number.");
                 return;
             }
 
-            // ----------- INSERT SECTION -----------
             try
             {
-                // CAST to remove .0000
                 string query =
                     "INSERT INTO RawMaterials (MaterialID, MaterialName, Quantity, Unit, DateAdded) " +
                     "VALUES (@id, @name, CAST(@qty AS decimal(18,0)), @unit, @date)";
 
                 SqlParameter[] p =
                 {
-                    new SqlParameter("@id", id),
-                    new SqlParameter("@name", name),
-                    new SqlParameter("@qty", quantity),
-                    new SqlParameter("@unit", unit),
-                    new SqlParameter("@date", date)
-                };
+                new SqlParameter("@id", id),
+                new SqlParameter("@name", name),
+                new SqlParameter("@qty", quantity),
+                new SqlParameter("@unit", unit),
+                new SqlParameter("@date", date)
+            };
 
                 DbHelper.ExecuteNonQuery(query, p);
-
                 MessageBox.Show("Material added successfully!");
-
                 LoadMaterials();
 
                 txtID.Clear();
@@ -144,29 +129,31 @@ namespace TFBlockManagementSystem
             }
         }
 
-
         // ----------------------------
-        // REMOVE MATERIAL
+        // REMOVE MATERIAL FROM BOTH FACTORIES
         // ----------------------------
-        private void btnRemove_Click(object sender, EventArgs e)
+        // ----------------------------
+        // REMOVE MATERIAL FROM BOTH FACTORIES
+        // ----------------------------
+        private void BtnRemove_Click(object? sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 0)
+            string material = cmbName.SelectedItem?.ToString();
+            if (string.IsNullOrEmpty(material))
             {
-                MessageBox.Show("Select a row to remove!");
+                MessageBox.Show("Select a material to remove.");
                 return;
             }
 
-            string id = dataGridView1.SelectedRows[0].Cells["MaterialID"].Value?.ToString() ?? "";
-
-            if (id == "")
+            if (!int.TryParse(txtQty.Text.Trim(), out int quantity) || quantity <= 0)
             {
-                MessageBox.Show("Invalid selection!");
+                MessageBox.Show("Enter a valid quantity to remove.");
+                txtQty.Focus();
                 return;
             }
 
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to delete this material?",
-                "Confirm Delete",
+                $"Are you sure you want to remove {quantity} {GetUnit(material)} of {material} from both factories?",
+                "Confirm Remove",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning
             );
@@ -174,20 +161,26 @@ namespace TFBlockManagementSystem
             if (dr != DialogResult.Yes)
                 return;
 
-            try
-            {
-                DbHelper.ExecuteNonQuery(
-                    "DELETE FROM RawMaterials WHERE MaterialID = @id",
-                    new SqlParameter[] { new SqlParameter("@id", id) });
+            // Remove from Factory1
+            bool removedFactory1 = RawMaterialDb.RemoveQuantity(material, quantity, "Factory1");
 
-                MessageBox.Show("Material removed!");
-                LoadMaterials();
-            }
-            catch (Exception ex)
+            // Remove from Factory2
+            bool removedFactory2 = RawMaterialDb.RemoveQuantity(material, quantity, "Factory2");
+
+            if (removedFactory1 || removedFactory2)
             {
-                MessageBox.Show("Error removing material: " + ex.Message);
+                MessageBox.Show("Raw material entry removed successfully!");
+                txtQty.Clear();
+                cmbName.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show("No material was removed. Please check if it exists in the factories.");
             }
         }
 
+
     }
+
+
 }

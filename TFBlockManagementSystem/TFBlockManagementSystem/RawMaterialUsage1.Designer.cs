@@ -17,7 +17,7 @@ namespace Factory1_Dashboard.Pages
 
         private Button btnSave;
         private Button btnClear;
-
+        private Button btnRemove;
         protected override void Dispose(bool disposing)
         {
             if (disposing && components != null)
@@ -36,6 +36,7 @@ namespace Factory1_Dashboard.Pages
             this.txtQuantity = new TextBox();
             this.dateMaterial = new DateTimePicker();
             this.btnSave = new Button();
+            this.btnRemove = new Button();
             this.btnClear = new Button();
             this.SuspendLayout();
             // 
@@ -130,6 +131,22 @@ namespace Factory1_Dashboard.Pages
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+
+            //
+            // btnRemove
+            //
+            this.btnRemove.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(520, 310);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(140, 45);
+            this.btnRemove.TabIndex = 9;
+            this.btnRemove.Text = "Remove Entry";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            
             // 
             // RawMaterialPage
             // 
@@ -140,6 +157,7 @@ namespace Factory1_Dashboard.Pages
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.cmbMaterialName);
             this.Controls.Add(this.txtQuantity);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.dateMaterial);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);

@@ -20,10 +20,7 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
-            this.btnRawMaterial = new System.Windows.Forms.Button();
-            this.btnProduction = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.lblHeading = new System.Windows.Forms.Label();
             this.dataGridReport = new System.Windows.Forms.DataGridView();
@@ -61,67 +58,28 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panelSidebar.Controls.Add(this.btnLogout);
             this.panelSidebar.Controls.Add(this.btnReports);
-            this.panelSidebar.Controls.Add(this.btnRawMaterial);
-            this.panelSidebar.Controls.Add(this.btnProduction);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 60);
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(200, 540);
             this.panelSidebar.TabIndex = 1;
             // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.Firebrick;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(20, 430);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(160, 40);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            // 
-            // btnReports
+            // btnReports (Centered)
             // 
             this.btnReports.BackColor = System.Drawing.Color.SteelBlue;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReports.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(20, 200);
+            this.btnReports.Size = new System.Drawing.Size(160, 50);
+            this.btnReports.Location = new System.Drawing.Point(
+                (panelSidebar.Width - 160) / 2, // Center horizontally
+                (panelSidebar.Height - 50) / 2  // Center vertically
+            );
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(160, 40);
             this.btnReports.TabIndex = 2;
             this.btnReports.Text = "Provide Report";
             this.btnReports.UseVisualStyleBackColor = false;
-            // 
-            // btnRawMaterial
-            // 
-            this.btnRawMaterial.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRawMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRawMaterial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRawMaterial.ForeColor = System.Drawing.Color.White;
-            this.btnRawMaterial.Location = new System.Drawing.Point(20, 140);
-            this.btnRawMaterial.Name = "btnRawMaterial";
-            this.btnRawMaterial.Size = new System.Drawing.Size(160, 40);
-            this.btnRawMaterial.TabIndex = 1;
-            this.btnRawMaterial.Text = "Raw Material";
-            this.btnRawMaterial.UseVisualStyleBackColor = false;
-            // 
-            // btnProduction
-            // 
-            this.btnProduction.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnProduction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProduction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnProduction.ForeColor = System.Drawing.Color.White;
-            this.btnProduction.Location = new System.Drawing.Point(20, 80);
-            this.btnProduction.Name = "btnProduction";
-            this.btnProduction.Size = new System.Drawing.Size(160, 40);
-            this.btnProduction.TabIndex = 0;
-            this.btnProduction.Text = "Production";
-            this.btnProduction.UseVisualStyleBackColor = false;
             // 
             // mainPanel
             // 
@@ -211,9 +169,7 @@
             this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            
             this.Name = "ReportToOwner";
-            
             this.Text = "Report to Owner";
             this.panelHeader.ResumeLayout(false);
             this.panelSidebar.ResumeLayout(false);
@@ -221,7 +177,6 @@
             this.mainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridReport)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -229,10 +184,7 @@
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelSidebar;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnReports;
-        private System.Windows.Forms.Button btnRawMaterial;
-        private System.Windows.Forms.Button btnProduction;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label lblHeading;
         private System.Windows.Forms.DataGridView dataGridReport;

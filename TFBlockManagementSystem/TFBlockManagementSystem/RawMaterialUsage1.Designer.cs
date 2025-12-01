@@ -11,7 +11,7 @@ namespace Factory1_Dashboard.Pages
         private Label lblQuantity;
         private Label lblDate;
 
-        private TextBox txtMaterialName;
+        private ComboBox cmbMaterialName; // changed from TextBox
         private TextBox txtQuantity;
         private DateTimePicker dateMaterial;
 
@@ -28,15 +28,15 @@ namespace Factory1_Dashboard.Pages
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblMaterialName = new System.Windows.Forms.Label();
-            this.lblQuantity = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.txtMaterialName = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.dateMaterial = new System.Windows.Forms.DateTimePicker();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.lblTitle = new Label();
+            this.lblMaterialName = new Label();
+            this.lblQuantity = new Label();
+            this.lblDate = new Label();
+            this.cmbMaterialName = new ComboBox(); // updated
+            this.txtQuantity = new TextBox();
+            this.dateMaterial = new DateTimePicker();
+            this.btnSave = new Button();
+            this.btnClear = new Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -79,13 +79,13 @@ namespace Factory1_Dashboard.Pages
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "Date:";
             // 
-            // txtMaterialName
+            // cmbMaterialName
             // 
-            this.txtMaterialName.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtMaterialName.Location = new System.Drawing.Point(200, 115);
-            this.txtMaterialName.Name = "txtMaterialName";
-            this.txtMaterialName.Size = new System.Drawing.Size(300, 29);
-            this.txtMaterialName.TabIndex = 4;
+            this.cmbMaterialName.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbMaterialName.Location = new System.Drawing.Point(200, 115);
+            this.cmbMaterialName.Name = "cmbMaterialName";
+            this.cmbMaterialName.Size = new System.Drawing.Size(300, 29);
+            this.cmbMaterialName.TabIndex = 4;
             // 
             // txtQuantity
             // 
@@ -107,7 +107,7 @@ namespace Factory1_Dashboard.Pages
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.FlatStyle = FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(200, 310);
@@ -121,7 +121,7 @@ namespace Factory1_Dashboard.Pages
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.FlatStyle = FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(360, 310);
@@ -138,7 +138,7 @@ namespace Factory1_Dashboard.Pages
             this.Controls.Add(this.lblMaterialName);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.txtMaterialName);
+            this.Controls.Add(this.cmbMaterialName);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.dateMaterial);
             this.Controls.Add(this.btnSave);
@@ -147,7 +147,6 @@ namespace Factory1_Dashboard.Pages
             this.Size = new System.Drawing.Size(944, 407);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
     }
 }

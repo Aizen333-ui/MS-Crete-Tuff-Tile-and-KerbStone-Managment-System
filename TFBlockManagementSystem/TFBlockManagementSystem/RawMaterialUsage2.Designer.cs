@@ -37,6 +37,7 @@ namespace Factory2_Dashboard.Pages
             this.dateMaterial = new DateTimePicker();
             this.btnSave = new Button();
             this.btnClear = new Button();
+            this.btnRemove = new Button();
             this.SuspendLayout();
             // 
             // lblTitle

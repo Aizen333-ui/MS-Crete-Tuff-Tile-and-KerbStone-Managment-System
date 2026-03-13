@@ -68,7 +68,7 @@ namespace Factory1_Dashboard.Pages
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(104, 21);
             this.lblQuantity.TabIndex = 2;
-            this.lblQuantity.Text = "Quantity (kg):";
+            this.lblQuantity.Text = "Quantity :";
             // 
             // lblDate
             // 

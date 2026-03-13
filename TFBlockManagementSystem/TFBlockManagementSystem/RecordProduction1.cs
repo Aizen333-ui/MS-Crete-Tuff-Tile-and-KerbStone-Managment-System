@@ -22,7 +22,7 @@ namespace Factory1_Dashboard.Pages
 
         private void LoadProductOptions()
         {
-            cmbProductName.Items.Clear();
+            
             cmbProductName.Items.AddRange(new object[]
             {
                 "Tuff Tile",
@@ -36,7 +36,7 @@ namespace Factory1_Dashboard.Pages
 
         private void LoadUnitOptions()
         {
-            cmbUnit.Items.Clear();
+            
             cmbUnit.Items.AddRange(new object[]
             {
                 "Pieces",

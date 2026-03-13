@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7eC0hoOY9iw=",
+  "dgSpecHash": "bVpTXpf55gs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\talha\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\talha\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

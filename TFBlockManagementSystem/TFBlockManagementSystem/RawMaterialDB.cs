@@ -40,7 +40,7 @@ namespace TFBlockManagementSystem
                     con.Open();
 
                     // 1️⃣ Check current quantity
-                    string checkQuery = $"SELECT Quantity FROM {tableName} WHERE MaterialName = @name";
+                    string checkQuery = $"SELECT Quantity FROM RawMaterials WHERE MaterialName = @name";
                     int currentQty = 0;
 
                     using (SqlCommand checkCmd = new SqlCommand(checkQuery, con))
@@ -60,7 +60,7 @@ namespace TFBlockManagementSystem
                     if (currentQty <= quantity)
                     {
                         // Delete row if removing all or more than existing
-                        string deleteQuery = $"DELETE FROM {tableName} WHERE MaterialName = @name";
+                        string deleteQuery = $"DELETE FROM RawMaterials WHERE MaterialName = @name";
                         using (SqlCommand delCmd = new SqlCommand(deleteQuery, con))
                         {
                             delCmd.Parameters.AddWithValue("@name", materialName);
@@ -70,7 +70,7 @@ namespace TFBlockManagementSystem
                     else
                     {
                         // Update remaining quantity
-                        string updateQuery = $"UPDATE {tableName} SET Quantity = Quantity - @qty WHERE MaterialName = @name";
+                        string updateQuery = $"UPDATE RawMaterials SET Quantity = Quantity - @qty WHERE MaterialName = @name";
                         using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
                         {
                             updateCmd.Parameters.AddWithValue("@qty", quantity);

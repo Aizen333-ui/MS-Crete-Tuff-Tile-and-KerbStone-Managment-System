@@ -20,7 +20,6 @@
         {
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.panelSidebar = new System.Windows.Forms.Panel();
             this.btnReports = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.lblHeading = new System.Windows.Forms.Label();
@@ -33,7 +32,6 @@
             this.lblTo = new System.Windows.Forms.Label();
 
             this.panelHeader.SuspendLayout();
-            this.panelSidebar.SuspendLayout();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridReport)).BeginInit();
             this.SuspendLayout();
@@ -56,15 +54,6 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Factory Report to Owner";
 
-            // panelSidebar
-            this.panelSidebar.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panelSidebar.Controls.Add(this.btnReports);
-            this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSidebar.Location = new System.Drawing.Point(0, 60);
-            this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(200, 540);
-            this.panelSidebar.TabIndex = 1;
-
             // btnReports
             this.btnReports.BackColor = System.Drawing.Color.SteelBlue;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -72,13 +61,8 @@
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Size = new System.Drawing.Size(160, 50);
             this.btnReports.Location = new System.Drawing.Point(
-                (panelSidebar.Width - 160) / 2,
-                (panelSidebar.Height - 50) / 2
             );
-            this.btnReports.Name = "btnReports";
-            this.btnReports.TabIndex = 2;
-            this.btnReports.Text = "Provide Report";
-            this.btnReports.UseVisualStyleBackColor = false;
+           
 
             // mainPanel
             this.mainPanel.Controls.Add(this.lblHeading);
@@ -169,14 +153,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 600);
             this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Name = "Report1";
             this.Text = "Report to Owner";
 
             this.panelHeader.ResumeLayout(false);
-            this.panelSidebar.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridReport)).EndInit();
@@ -187,7 +169,6 @@
 
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Panel panelSidebar;
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label lblHeading;

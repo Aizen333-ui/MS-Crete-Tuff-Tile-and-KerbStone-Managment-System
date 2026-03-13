@@ -81,7 +81,7 @@ namespace Factory1_Dashboard.Pages
             });
 
             MessageBox.Show("Raw Material Saved!");
-            ClearFields();
+            
         }
 
         private void BtnClear_Click(object? sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace Factory1_Dashboard.Pages
             }
 
             DialogResult dr = MessageBox.Show(
-                $"Are you sure you want to remove {quantity} {GetUnitForMaterial(material)} of {material} from Factory 1 and Factory 2?",
+                $"Remove {quantity} {GetUnitForMaterial(material)} of {material} from Factory 1 ?",
                 "Confirm Remove",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning
@@ -136,23 +136,24 @@ namespace Factory1_Dashboard.Pages
                 return;
 
             bool removedFactory1 = RawMaterialDb.RemoveQuantity(material, quantity, "Factory1");
-            bool removedFactory2 = RawMaterialDb.RemoveQuantity(material, quantity, "Factory2");
 
-            if (removedFactory1 || removedFactory2)
+            if (removedFactory1)
             {
-                // Update GlobalStorage
-                var entry = GlobalStorage.RawMaterials.FirstOrDefault(r => r.MaterialName == material && r.Quantity == quantity);
+                var entry = GlobalStorage.RawMaterials
+                    .FirstOrDefault(r => r.MaterialName == material);
+
                 if (entry != null)
                     GlobalStorage.RawMaterials.Remove(entry);
 
                 MessageBox.Show("Raw material entry removed successfully!");
-                ClearFields();
+                
             }
             else
             {
-                MessageBox.Show("No material was removed. Please check if it exists in the factories.");
+                MessageBox.Show("Material not found in Factory1.");
             }
         }
+
     }
 
 

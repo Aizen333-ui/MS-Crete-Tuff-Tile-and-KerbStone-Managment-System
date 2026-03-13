@@ -38,7 +38,7 @@ namespace Factory2_Dashboard.Pages
             dt.Columns.Add("Date");
 
             // ---------------- RAW MATERIAL DATA ----------------
-            var rawList = GlobalStorage.RawMaterials
+            var rawList = GlobalStorage2.RawMaterials
                 .Where(x => x.Date.Date >= from && x.Date.Date <= to)
                 .ToList();
 
@@ -54,7 +54,7 @@ namespace Factory2_Dashboard.Pages
             }
 
             // ---------------- PRODUCTION DATA ----------------
-            var prodList = GlobalStorage.Productions
+            var prodList = GlobalStorage2.Productions
                 .Where(x => x.Date.Date >= from && x.Date.Date <= to)
                 .ToList();
 
@@ -120,7 +120,7 @@ namespace Factory2_Dashboard.Pages
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@mid", 1); // Factory Manager ID
+                        cmd.Parameters.AddWithValue("@mid", 2); // Factory Manager ID
                         cmd.Parameters.AddWithValue("@date", DateTime.Now.Date);
                         cmd.Parameters.AddWithValue("@text", finalReport);
 

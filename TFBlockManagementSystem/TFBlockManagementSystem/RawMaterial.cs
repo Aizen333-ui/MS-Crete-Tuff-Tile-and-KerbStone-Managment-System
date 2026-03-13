@@ -40,9 +40,9 @@ namespace TFBlockManagementSystem
         {
             return materialName switch
             {
-                "Cement" => "Tons",
-                "Sand" => "CFT",
-                "Crush" => "CFT",
+                "Cement" => "Bag",
+                "Sand" => "Ton",
+                "Crush" => "Ton",
                 "Steel" => "KG",
                 "Mold Oil" => "Liters",
                 _ => ""
@@ -81,7 +81,7 @@ namespace TFBlockManagementSystem
                 return;
             }
 
-            if (!Regex.IsMatch(id, @"^[0-9]{1,10}$"))
+            if (!Regex.IsMatch(id, @"^[1-9]{1,10}$"))
             {
                 MessageBox.Show("Material ID must contain numbers only (1–10 digits).");
                 return;
@@ -152,7 +152,7 @@ namespace TFBlockManagementSystem
             }
 
             DialogResult dr = MessageBox.Show(
-                $"Are you sure you want to remove {quantity} {GetUnit(material)} of {material} from both factories?",
+                $"Are you sure you want to remove {quantity} {GetUnit(material)} of {material} from factory?",
                 "Confirm Remove",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning

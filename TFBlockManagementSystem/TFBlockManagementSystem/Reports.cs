@@ -52,12 +52,22 @@ namespace TFBlockManagementSystem
                 using (SqlConnection con = new SqlConnection(connStr))
                 {
                     // Dynamically use the table name
-                    string query = $@"
-                SELECT ReportDate, ReportText
-                FROM {tableName}
-                WHERE ManagerID = @fid
-                  AND ReportDate BETWEEN @from AND @to
-                ORDER BY ReportDate ASC";
+                    string query = @"
+
+                    SELECT ReportDate, ReportText
+                    FROM DailyReports1
+                    WHERE ManagerID = @fid
+                      AND ReportDate BETWEEN @from AND @to
+
+                    UNION 
+
+                    SELECT ReportDate, ReportText
+                    FROM DailyReports2
+                    WHERE ManagerID = @fid
+                      AND ReportDate BETWEEN @from AND @to
+
+                    ORDER BY ReportDate ASC";
+
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {

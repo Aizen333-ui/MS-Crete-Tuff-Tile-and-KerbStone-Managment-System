@@ -22,7 +22,6 @@ namespace Factory2_Dashboard.Pages
 
         private void LoadProductOptions()
         {
-            cmbProductName.Items.Clear();
             cmbProductName.Items.AddRange(new object[]
             {
                 "Tuff Tile",
@@ -36,7 +35,6 @@ namespace Factory2_Dashboard.Pages
 
         private void LoadUnitOptions()
         {
-            cmbUnit.Items.Clear();
             cmbUnit.Items.AddRange(new object[]
             {
                 "Pieces",
@@ -86,7 +84,7 @@ namespace Factory2_Dashboard.Pages
             }
 
             // ✅ Duplicate Check
-            bool exists = GlobalStorage.Productions.Any(p =>
+            bool exists = GlobalStorage2.Productions.Any(p =>
                 p.ProductName == cmbProductName.Text &&
                 p.Date.Date == selectedDate);
 
@@ -97,7 +95,7 @@ namespace Factory2_Dashboard.Pages
             }
 
             // ✅ Save
-            GlobalStorage.Productions.Add(new ProductionEntry
+            GlobalStorage2.Productions.Add(new ProductionEntry
             {
                 ProductName = cmbProductName.Text,
                 Quantity = quantity,

@@ -70,9 +70,9 @@ namespace TFBlockManagementSystem
             string reason = cmbReason.Text.Trim();
             DateTime date = datePaid.Value;
 
-            if (!Regex.IsMatch(id, @"^[0-9]{3,10}$"))
+            if (!Regex.IsMatch(id, @"^[1-9]{1,10}$"))
             {
-                MessageBox.Show("Payment ID must be 3–10 digits.");
+                MessageBox.Show("Payment ID must be 1–10 digits.");
                 return;
             }
 

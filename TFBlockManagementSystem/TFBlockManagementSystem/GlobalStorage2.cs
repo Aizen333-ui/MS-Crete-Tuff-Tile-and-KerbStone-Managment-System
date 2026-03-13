@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TFBlockManagementSystem;
 namespace Factory2_Dashboard
 {
-    public static class GlobalStorage
+    public static class GlobalStorage2
     {
         public static List<RawMaterialEntry> RawMaterials = new List<RawMaterialEntry>();
         public static List<ProductionEntry> Productions = new List<ProductionEntry>();

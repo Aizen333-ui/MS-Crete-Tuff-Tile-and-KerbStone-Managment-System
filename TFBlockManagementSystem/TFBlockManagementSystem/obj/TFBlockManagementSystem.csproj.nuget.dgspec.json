@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj": {}
+    "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj": {
+    "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
         "projectName": "TFBlockManagementSystem",
-        "projectPath": "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
+        "projectPath": "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\TFBlockManagementSystem.csproj",
         "packagesPath": "C:\\Users\\talha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\talha\\Source\\Repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\talha\\source\\repos\\MS-Crete-Tuff-Tile-and-KerbStone-Managment-System\\TFBlockManagementSystem\\TFBlockManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\library-packs"
